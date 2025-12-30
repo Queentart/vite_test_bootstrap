@@ -1,0 +1,36 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# --- 강의 및 개발 환경 관련 ---
+.DS_Store           # macOS 시스템 파일
+Thumbs.db           # Windows 미리보기 파일
+*.local             # 로컬 설정 파일들
+.vscode/* # VS Code 개인 설정 (팀 프로젝트 시 권장)
+!.vscode/extensions.json # 단, 권장 확장 프로그램 목록은 제외
+
+# --- 빌드 및 로그 ---
+npm-debug.log* # npm 에러 로그
+yarn-debug.log* # yarn 에러 로그
+yarn-error.log* # yarn 에러 로그

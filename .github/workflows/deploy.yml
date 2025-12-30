@@ -13,7 +13,7 @@ jobs:
     runs-on: windows-latest #  가상 서버 환경을 윈도우로 설정
     steps:
       - name: Checkout 
-        uses: actions/checkout@v4 # 소스 코드 가져오기
+        uses: actions\checkout@v4 # 소스 코드 가져오기
 
       - name: Install and Build 
         shell: cmd # 윈도우 명령 프롬프트(CMD) 사용 명시
@@ -22,7 +22,7 @@ jobs:
           npm run build
 
       - name: Deploy 
-        uses: JamesIves/github-pages-deploy-action@v4 # 배포 실행
+        uses: JamesIves\github-pages-deploy-action@v4 # 배포 실행
         with:
           folder: dist # 빌드 결과물 폴더
           branch: gh-pages # 배포용 브랜치
